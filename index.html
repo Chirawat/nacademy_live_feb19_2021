@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Starter Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">N Academy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card">
+          <img src="img1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ห้องรับแขก</h5>
+            <p class="card-text">
+              Status: <span class="badge bg-danger" id="lblStatus">Disconnected!</span>
+              <span id="led" class="badge rounded-pill bg-secondary">OFF</span>
+            </p>
+            <a id="on" onclick="btnOnClicked()" href="#" class="btn btn-primary">เปิดไฟ</a>
+            <a id="off" onclick="btnOffClicked()" href="#" class="btn btn-danger">ปิดไฟ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</main><!-- /.container -->
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="custom.js"></script>
+
+  </body>
+</html>
